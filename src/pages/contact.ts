@@ -1,77 +1,107 @@
 export function renderContact(): HTMLElement{
     const div = document.createElement('div');
     div.innerHTML = `
-        <div class="w-full max-w-lg bg-white dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5">
-    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Create a role with read only in-line policies</h2>
-    <p class="text-gray-500 dark:text-gray-400 mb-6">To give Flowbite read access, please create an IAM Role following <a href="#" class="text-blue-700 dark:text-blue-500 underline hover:no-underline font-medium">trust relationship</a> and <a href="#" class="text-blue-700 dark:text-blue-500 underline hover:no-underline font-medium">inline policy</a>.</p>
-    <label for="account-id" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">Flowbite account ID:</label>
-    <div class="relative mb-4">
-        <input id="account-id" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="756593826" disabled readonly>
-        <button data-copy-to-clipboard-target="account-id" data-tooltip-target="tooltip-account-id" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
-            <span id="default-icon-account-id">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
-                </svg>
-            </span>
-            <span id="success-icon-account-id" class="hidden">
-                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                </svg>
-            </span>
-        </button>
-        <div id="tooltip-account-id" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-            <span id="default-tooltip-message-account-id">Copy to clipboard</span>
-            <span id="success-tooltip-message-account-id" class="hidden">Copied!</span>
-            <div class="tooltip-arrow" data-popper-arrow></div>
+    <main class="">
+      <!-- Breadcrumb -->
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center text-sm">
+          <a href="/" class="text-gray-500 hover:text-gray-800">Home</a>
+          <span class="mx-2 text-gray-500">/</span>
+          <a href="./contact.html" class="text-gray-800">Contact</a>
         </div>
-    </div>
-    <label for="api-key" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">API key:</label>
-    <div class="relative mb-4">
-        <input id="api-key" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="f4h6sd3t-jsy63ind-hsgdt7rs-jdhf76st" disabled readonly>
-        <button data-copy-to-clipboard-target="api-key" data-tooltip-target="tooltip-api-key" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
-            <span id="default-icon-api-key">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
-                </svg>
-            </span>
-            <span id="success-icon-api-key" class="hidden">
-                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                </svg>
-            </span>
-        </button>
-        <div id="tooltip-api-key" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-            <span id="default-tooltip-message-api-key">Copy to clipboard</span>
-            <span id="success-tooltip-message-api-key" class="hidden">Copied!</span>
-            <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+      <!-- Contact Section -->
+      <section class="container mx-auto px-6 py-10">
+        <div
+          class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8"
+        >
+          <!-- Contact Info Card -->
+          <div class="md:w-1/3 bg-white p-8 rounded-lg shadow-md" data-aos="fade-down-right">
+            <!-- Call To Us -->
+            <div class="mb-10">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-secondary2 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-phone text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold">Call To Us</h3>
+              </div>
+              <p class="text-gray-600 mb-3">
+                We are available 24/7, 7 days a week.
+              </p>
+              <p class="text-gray-600 mb-3">Phone: +8801611112222</p>
+              <div class="border-t border-gray-200 my-6"></div>
+            </div>
+
+            <!-- Write To US -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-secondary2 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold">Write To US</h3>
+              </div>
+              <p class="text-gray-600 mb-3">
+                Fill out our form and we will contact you within 24 hours.
+              </p>
+              <p class="text-gray-600 mb-2">Emails: customer@exclusive.com</p>
+              <p class="text-gray-600">Emails: support@exclusive.com</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="md:w-2/3 bg-white p-8 rounded-lg shadow-md border border-blue-100"
+            data-aos="fade-up-left"
+          >
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Your Name *"
+                    class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your Email *"
+                    class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Your Phone *"
+                    class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                  />
+                </div>
+              </div>
+              <div>
+                <textarea
+                  rows="6"
+                  placeholder="Your Message"
+                  class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                ></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="bg-secondary2 text-white px-8 py-3 rounded-md transition duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
-    <label for="role-arn" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">Role ARN:</label>
-    <div class="relative mb-6">
-        <input id="role-arn" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="123456789012:user/Flowbite" disabled readonly>
-        <button data-copy-to-clipboard-target="role-arn" data-tooltip-target="tooltip-role-arn" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
-            <span id="default-icon-role-arn">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
-                </svg>
-            </span>
-            <span id="success-icon-role-arn" class="hidden">
-                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                </svg>
-            </span>
-        </button>
-        <div id="tooltip-role-arn" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-            <span id="default-tooltip-message-role-arn">Copy to clipboard</span>
-            <span id="success-tooltip-message-role-arn" class="hidden">Copied!</span>
-            <div class="tooltip-arrow" data-popper-arrow></div>
-        </div>
-    </div>
-    <div class="flex items-center space-x-4 rtl:space-x-reverse">
-        <button type="button" class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cancel</button>
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Next step</button>
-    </div>
-</div>
+      </section>
+    </main>
     `
     return div
 }

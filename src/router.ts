@@ -20,14 +20,13 @@ export function initRouter(): void {
     renderRoute();
 }
     
-    
     function renderRoute(): void {
     const pathname = window.location.pathname;
 
     let contentFn: () => HTMLElement;
 
     switch (pathname) {
-        case '/':
+        case '/home':
             contentFn = renderHome;
             break;
         case '/about':
@@ -36,8 +35,15 @@ export function initRouter(): void {
         case '/contact': 
             contentFn = renderContact;
             break;
-        default:
+        case '/service':
             contentFn = renderService;
+            break;
+        default:
+            contentFn = () => {
+                const div = document.createElement('div');
+                div.innerHTML = '<h1>404 - Page Not Found</h1>';
+                return div;
+            };
             break;
     }
     

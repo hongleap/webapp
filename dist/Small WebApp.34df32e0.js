@@ -698,7 +698,7 @@ function renderRoute() {
     const pathname = window.location.pathname;
     let contentFn;
     switch(pathname){
-        case '/':
+        case '/home':
             contentFn = (0, _home.renderHome);
             break;
         case '/about':
@@ -707,8 +707,15 @@ function renderRoute() {
         case '/contact':
             contentFn = (0, _contact.renderContact);
             break;
-        default:
+        case '/service':
             contentFn = (0, _service.renderService);
+            break;
+        default:
+            contentFn = ()=>{
+                const div = document.createElement('div');
+                div.innerHTML = '<h1>404 - Page Not Found</h1>';
+                return div;
+            };
             break;
     }
     (0, _layout.createLayout)(contentFn);
@@ -742,7 +749,7 @@ function Footer() {
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com/" class="flex items-center">
                     <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tailwind</span>
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -861,12 +868,12 @@ function Header() {
     const header = document.createElement('header');
     header.className = 'bg-blue-900 text-white';
     header.innerHTML = `
-    <div class="mb-8">
+    <div class="m-8">
         <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/home" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tailwind</span>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
@@ -881,9 +888,9 @@ function Header() {
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
                 <a href="/home" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
-            </li>
+            </li>  
             <li>
-                <a href="/service" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">service</a>
+                <a href="/service" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Service</a>
             </li> 
             <li>
                 <a href="/about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
@@ -906,7 +913,281 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderAbout", ()=>renderAbout);
 function renderAbout() {
     const div = document.createElement('div');
-    div.innerHTML = ``;
+    div.innerHTML = `
+        <main class="">
+      <!-- Breadcrumb -->
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center text-sm">
+          <a href="/" class="text-gray-500 hover:text-gray-800">Home</a>
+          <span class="mx-2 text-gray-500">/</span>
+          <span class="text-gray-800">About</span>
+        </div>
+      </div>
+
+      <!-- Our Story Section -->
+      <section class="container mx-auto px-6 py-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 pr-8" data-aos="fade-down-right">
+            <h1 class="text-4xl font-bold mb-6">Our Story</h1>
+            <p class="text-gray-700 mb-4">
+              Launched in 2015, Exclusive is South Asia's premier online
+              shopping marketplace with an active presence in Bangladesh.
+              Supported by wide range of tailored marketing, data and service
+              solutions, Exclusive has 10,500 sellers and 300 brands and serves
+              3 millions customers across the region.
+            </p>
+            <p class="text-gray-700">
+              Exclusive has more than 1 Million products to offer, growing at a
+              very fast. Exclusive offers a diverse assortment in categories
+              ranging from consumer.
+            </p>
+          </div>
+          <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-up-left">
+            <img
+              src="https://cdn.dribbble.com/userupload/13121192/file/original-debc92111eefa2b479ff782039c60f1e.jpg?resize=400x0"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Stat Card 1 -->
+          <div
+            class="stat-card bg-white rounded-lg shadow-md text-black  p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100  rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+            </div>
+            <h3 class="text-3xl font-bold">10.5k</h3>
+            <p>Sellers active our site</p>
+          </div>
+          <!-- Stat Card 2 -->
+          <div
+            class="stat-card bg-white rounded-lg shadow-md text-black  p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100  rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+            </div>
+            <h3 class="text-3xl font-bold">33k</h3>
+            <p>Monthly Productduct Sale</p>
+          </div>
+          <!-- Stat Card 3 -->
+          <div
+            class="stat-card bg-white rounded-lg shadow-md text-black p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+            </div>
+            <h3 class="text-3xl font-bold">45.5k</h3>
+            <p>Customer active in our site</p>
+          </div>
+          <!-- Stat Card 4 -->
+          <div
+            class="stat-card bg-white rounded-lg shadow-md text-black p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />                                                                              
+            </div>
+            <h3 class="text-3xl font-bold">25k</h3>
+            <p>Anual gross sale in our site</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div
+            class="team-card bg-gray-50 rounded-lg p-6"
+            data-aos="fade-up-right"
+          >
+            <div class="mb-4">
+              <img
+                src="https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg?semt=ais_hybrid&w=740"
+                alt="Team Member"
+                class="w-full h-64 object-cover rounded-lg shadow"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Tom Cruise</h3>
+            <p class="text-gray-600 mb-3">Founder & Chairman</p>
+            <div class="flex space-x-3">
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="team-card bg-gray-50 rounded-lg p-6"
+            data-aos="fade-up-right"
+          >
+            <div class="mb-4">
+              <img
+                src="https://dy7glz37jgl0b.cloudfront.net/advice/images/39732cb0715c2a3b547785ccb83407e1-man-smiles-at-computer-hands-clasped_l.jpeg"
+                alt="Team Member"
+                class="w-full h-64 object-cover rounded-lg shadow"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Emma Watson</h3>
+            <p class="text-gray-600 mb-3">Managing Director</p>
+            <div class="flex space-x-3">
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="team-card bg-gray-50 rounded-lg p-6"
+            data-aos="fade-up-right"
+          >
+            <div class="mb-4">
+              <img
+                src="https://cdn.prod.website-files.com/64c90c3b6f011629401599b1/652d09aa1adab2cd93fde418_rodzaje-person-zakupowych.webp"
+                alt="Team Member"
+                class="w-full h-64 object-cover rounded-lg shadow"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Will Smith</h3>
+            <p class="text-gray-600 mb-3">Product Designer</p>
+            <div class="flex space-x-3">
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-600 hover:text-gray-800"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+          <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+          <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+          <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+          <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="container mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Service 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center"
+            data-aos="fade-down-left"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 uppercase mb-2">
+              Free and Fast Delivery
+            </h3>
+            <p class="text-gray-600">Free delivery for all orders over $140</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center"
+            data-aos="fade-down-right"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 uppercase mb-2">
+              24/7 Customer Service
+            </h3>
+            <p class="text-gray-600">Friendly 24/7 customer support</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up-left">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
+            >
+            <img
+              src="https://i.pinimg.com/474x/e6/e4/df/e6e4df26ba752161b9fc6a17321fa286.jpg"
+              alt="Two women shopping with bags on pink background"
+              class="rounded-lg w-full h-auto shadow-lg"
+            />
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 uppercase mb-2">
+              Money Back Guarantee
+            </h3>
+            <p class="text-gray-600">We return money within 30 days</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    `;
     return div;
 }
 
@@ -917,77 +1198,107 @@ parcelHelpers.export(exports, "renderContact", ()=>renderContact);
 function renderContact() {
     const div = document.createElement('div');
     div.innerHTML = `
-        <div class="w-full max-w-lg bg-white dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5">
-    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Create a role with read only in-line policies</h2>
-    <p class="text-gray-500 dark:text-gray-400 mb-6">To give Flowbite read access, please create an IAM Role following <a href="#" class="text-blue-700 dark:text-blue-500 underline hover:no-underline font-medium">trust relationship</a> and <a href="#" class="text-blue-700 dark:text-blue-500 underline hover:no-underline font-medium">inline policy</a>.</p>
-    <label for="account-id" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">Flowbite account ID:</label>
-    <div class="relative mb-4">
-        <input id="account-id" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="756593826" disabled readonly>
-        <button data-copy-to-clipboard-target="account-id" data-tooltip-target="tooltip-account-id" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
-            <span id="default-icon-account-id">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
-                </svg>
-            </span>
-            <span id="success-icon-account-id" class="hidden">
-                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                </svg>
-            </span>
-        </button>
-        <div id="tooltip-account-id" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-            <span id="default-tooltip-message-account-id">Copy to clipboard</span>
-            <span id="success-tooltip-message-account-id" class="hidden">Copied!</span>
-            <div class="tooltip-arrow" data-popper-arrow></div>
+    <main class="">
+      <!-- Breadcrumb -->
+      <div class="container mx-auto px-6 py-3">
+        <div class="flex items-center text-sm">
+          <a href="/" class="text-gray-500 hover:text-gray-800">Home</a>
+          <span class="mx-2 text-gray-500">/</span>
+          <a href="./contact.html" class="text-gray-800">Contact</a>
         </div>
-    </div>
-    <label for="api-key" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">API key:</label>
-    <div class="relative mb-4">
-        <input id="api-key" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="f4h6sd3t-jsy63ind-hsgdt7rs-jdhf76st" disabled readonly>
-        <button data-copy-to-clipboard-target="api-key" data-tooltip-target="tooltip-api-key" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
-            <span id="default-icon-api-key">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
-                </svg>
-            </span>
-            <span id="success-icon-api-key" class="hidden">
-                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                </svg>
-            </span>
-        </button>
-        <div id="tooltip-api-key" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-            <span id="default-tooltip-message-api-key">Copy to clipboard</span>
-            <span id="success-tooltip-message-api-key" class="hidden">Copied!</span>
-            <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+
+      <!-- Contact Section -->
+      <section class="container mx-auto px-6 py-10">
+        <div
+          class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8"
+        >
+          <!-- Contact Info Card -->
+          <div class="md:w-1/3 bg-white p-8 rounded-lg shadow-md" data-aos="fade-down-right">
+            <!-- Call To Us -->
+            <div class="mb-10">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-secondary2 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-phone text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold">Call To Us</h3>
+              </div>
+              <p class="text-gray-600 mb-3">
+                We are available 24/7, 7 days a week.
+              </p>
+              <p class="text-gray-600 mb-3">Phone: +8801611112222</p>
+              <div class="border-t border-gray-200 my-6"></div>
+            </div>
+
+            <!-- Write To US -->
+            <div>
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-secondary2 rounded-full flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold">Write To US</h3>
+              </div>
+              <p class="text-gray-600 mb-3">
+                Fill out our form and we will contact you within 24 hours.
+              </p>
+              <p class="text-gray-600 mb-2">Emails: customer@exclusive.com</p>
+              <p class="text-gray-600">Emails: support@exclusive.com</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="md:w-2/3 bg-white p-8 rounded-lg shadow-md border border-blue-100"
+            data-aos="fade-up-left"
+          >
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Your Name *"
+                    class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your Email *"
+                    class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Your Phone *"
+                    class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                  />
+                </div>
+              </div>
+              <div>
+                <textarea
+                  rows="6"
+                  placeholder="Your Message"
+                  class="w-full px-4 py-3 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-secbg-secondary2"
+                ></textarea>
+              </div>
+              <div class="flex justify-end">
+                <button
+                  type="submit"
+                  class="bg-secondary2 text-white px-8 py-3 rounded-md transition duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
-    <label for="role-arn" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">Role ARN:</label>
-    <div class="relative mb-6">
-        <input id="role-arn" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="123456789012:user/Flowbite" disabled readonly>
-        <button data-copy-to-clipboard-target="role-arn" data-tooltip-target="tooltip-role-arn" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
-            <span id="default-icon-role-arn">
-                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
-                </svg>
-            </span>
-            <span id="success-icon-role-arn" class="hidden">
-                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                </svg>
-            </span>
-        </button>
-        <div id="tooltip-role-arn" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
-            <span id="default-tooltip-message-role-arn">Copy to clipboard</span>
-            <span id="success-tooltip-message-role-arn" class="hidden">Copied!</span>
-            <div class="tooltip-arrow" data-popper-arrow></div>
-        </div>
-    </div>
-    <div class="flex items-center space-x-4 rtl:space-x-reverse">
-        <button type="button" class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cancel</button>
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Next step</button>
-    </div>
-</div>
+      </section>
+    </main>
     `;
     return div;
 }
@@ -999,7 +1310,33 @@ parcelHelpers.export(exports, "renderHome", ()=>renderHome);
 function renderHome() {
     const div = document.createElement('div');
     div.innerHTML = `
-        `;
+    <section class=" w-full py-9 px-8">
+      <div class="mx-auto flex  flex-col items-center lg:flex-row justify-center gap-10 py-40 max-w-[1440px] bg-no-repeat ">
+        <div class="w-[660px]  flex-col justify-center items-start gap-20 inline-flex">
+          <div class="self-stretch  flex-col justify-start items-start gap-5 flex">
+            <h1 class="self-stretch">
+              <span class="  text-5xl font-bold font-['Roboto']">Redefining Motion:</span><span class="text-blue-600 text-5xl font-bold font-['Roboto']"> The Future of Fashion</span>
+            </h1>
+            <p class="self-stretch  text-xl font-normal font-['Roboto']">
+            Experience unparalleled comfort and
+            innovative design with our state-of-the-art, futuristic sports shoes. Built for champions, designed for you.
+            </p>
+          </div>
+          <div class="justify-start items-center gap-5 inline-flex">
+            <div class="justify-start items-center gap-2.5 flex">
+              <div data-svg-wrapper="true" class="relative"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.7806 12.5306L14.0306 19.2806C13.8899 19.4213 13.699 19.5004 13.5 19.5004C13.301 19.5004 13.1101 19.4213 12.9694 19.2806C12.8286 19.1399 12.7496 18.949 12.7496 18.75C12.7496 18.551 12.8286 18.3601 12.9694 18.2194L18.4397 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H18.4397L12.9694 5.78061C12.8286 5.63988 12.7496 5.44901 12.7496 5.24999C12.7496 5.05097 12.8286 4.8601 12.9694 4.71936C13.1101 4.57863 13.301 4.49957 13.5 4.49957C13.699 4.49957 13.8899 4.57863 14.0306 4.71936L20.7806 11.4694C20.8504 11.539 20.9057 11.6217 20.9434 11.7128C20.9812 11.8038 21.0006 11.9014 21.0006 12C21.0006 12.0986 20.9812 12.1961 20.9434 12.2872C20.9057 12.3782 20.8504 12.461 20.7806 12.5306Z"
+                    fill="white"></path>
+                </svg></div>
+            </div>
+            <button class="px-8 py-4 bg-blue-600 rounded-[10px] justify-center items-center gap-2.5 flex text-white text-sm font-semibold font-['Roboto']">Shop Now</button>
+          </div>
+        </div><img class="w-full max-w-[600px]" src="https://queue-it.com/media/ppcp1twv/product-drop.jpg" alt="">
+      </div>
+    </section>
+    `;
     return div;
 }
 
@@ -1011,38 +1348,115 @@ function renderService() {
     const div = document.createElement('div');
     async function fetchProducts() {
         try {
-            const response = await fetch('https://https://fakestoreapi.in/api/products.com/products');
-            if (!response.ok) throw new Error('Network response was not ok');
-            const data = await response.json();
-            console.log('Fetched service data:', data);
+            const api = await fetch('https://dummyjson.com/products');
+            if (!api.ok) throw new Error(`HTTP error status! : ${api.status}`);
+            const data = await api.json();
             return data.products;
         } catch (error) {
-            console.error('Fetch error:', error);
+            console.error('Error fetching products: ', error);
             return [];
         }
     }
-    // Set initial loading state
-    div.innerHTML = `<p>Loading services...</p>`;
     function renderCards(products) {
-        console.log('Rendering products:', products);
-        // Clear previous content and create a grid container
         div.innerHTML = '';
         const grid = document.createElement('div');
-        grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%] m-auto";
+        grid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[90%] m-auto";
         products.forEach((product)=>{
-            console.log(product.description);
             const card = document.createElement('div');
+            const imageUrl = product.images?.[0] || 'https://via.placeholder.com/300x200';
             card.innerHTML = `
-      <img src="${product.images[0]}" alt="${product.title}" width="300" height="350" />
-      <h2>${product.title}</h2>
-      <p>${product.description}</p>
-      <p>Price: ${product.price}$</p>
-    `;
+        <div class="rounded-md gap-4 shadow-sm cursor-pointer hover:shadow-md transition">
+          <div class="bg-gray-200">
+            <img src="${imageUrl}" alt="${product.title}" width="300" height="200" />
+          </div>
+          <div class="px-4 py-2">
+            <h2 class="text-blue-600 font-bold">${product.title.slice(0, 15)}...</h2>
+            <p>${product.description.slice(0, 50)}...</p>
+            <p class="text-blue-600 font-bold">Price: ${product.price}$</p>
+          </div>
+        </div>
+      `;
+            card.addEventListener('click', ()=>{
+                showProductDetail(product);
+            });
             grid.appendChild(card);
         });
         div.appendChild(grid);
     }
-    // Main execution
+    // Create modal container once (outside renderCards)
+    const modal = document.createElement('div');
+    modal.className = "fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden";
+    modal.innerHTML = `
+    <div class="bg-white rounded-lg w-[90%] m-auto relative p-6">
+      <button id="close-modal" class="absolute top-4 right-4 text-lg font-bold text-gray-700 hover:text-red-500">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  `;
+    document.body.appendChild(modal);
+    const modalContent = modal.querySelector('#modal-content');
+    const closeModalBtn = modal.querySelector('#close-modal');
+    function showProductDetail(product) {
+        modalContent.innerHTML = `
+      <div class="max-w-7xl mx-auto lg:px-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <img src="${product.images?.[0] || ''}" alt="${product.title}" class="w-full h-auto rounded-lg" />
+        </div>
+        <div class="text-lg grid gap-2 p-6">
+          <h1 class="font-bold text-3xl mb-2 text-blue-600">${product.title}</h1>
+          <p class="mb-4">${product.description}</p>
+          <p class="font-bold text-3xl mb-4 text-blue-600">Price: $${product.price}</p>
+          <button class="bg-blue-600 text-white px-8 py-4 rounded hover:bg-blue-700">Buy Now</button>
+          <div class="">
+            <div class="mb-4">
+            <p class="font-medium mb-1">Size:</p>
+            <div class="flex gap-2">
+             <button class="border px-3 py-1 rounded hover:bg-gray-100">
+               XS
+              </button>
+              <button class="border px-3 py-1 rounded hover:bg-gray-100">
+              S
+              </button>
+              <button
+              class="border px-3 py-1 rounded bg-secondary2 text-text"
+            >
+               M
+            </button>
+            <button class="border px-3 py-1 rounded hover:bg-gray-100">
+            L
+            </button>
+            <button class="border px-3 py-1 rounded hover:bg-gray-100">
+             XL
+            </button>
+            </div>
+            </div>
+
+            <!-- Quantity + Buy -->
+                <div class="flex items-center gap-4 mb-4">
+                  <input
+                    type="number"
+                    value="2"
+                    min="1"
+                    class="w-16 border rounded p-1 text-center"
+                  />
+                  <button
+                    class="bg-secondary2 text-white px-6 py-2 rounded hover:bg-hover-button"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+        </div>
+      </div>
+      
+    `;
+        modal.classList.remove('hidden');
+    }
+    closeModalBtn.addEventListener('click', ()=>{
+        modal.classList.add('hidden');
+    });
+    modal.addEventListener('click', (e)=>{
+        if (e.target === modal) modal.classList.add('hidden');
+    });
     (async ()=>{
         try {
             const products = await fetchProducts();
