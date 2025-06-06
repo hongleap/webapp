@@ -10,7 +10,7 @@ export function renderService():HTMLElement{
     };
     async function fetchProducts(): Promise<Products[]> {
     try {
-      const response = await fetch('https://dummyjson.com/products');
+      const response = await fetch('https://https://fakestoreapi.in/api/products.com/products');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

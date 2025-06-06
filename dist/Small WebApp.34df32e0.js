@@ -1011,7 +1011,7 @@ function renderService() {
     const div = document.createElement('div');
     async function fetchProducts() {
         try {
-            const response = await fetch('https://dummyjson.com/products');
+            const response = await fetch('https://https://fakestoreapi.in/api/products.com/products');
             if (!response.ok) throw new Error('Network response was not ok');
             const data = await response.json();
             console.log('Fetched service data:', data);
