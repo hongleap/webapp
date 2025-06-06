@@ -667,12 +667,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"gH3Lb":[function(require,module,exports,__globalThis) {
-var _routerTs = require("./router.ts");
+var _router = require("./router");
 document.addEventListener('DOMContentLoaded', ()=>{
-    (0, _routerTs.initRouter)();
+    (0, _router.initRouter)();
 });
 
-},{"./router.ts":"4wVP1"}],"4wVP1":[function(require,module,exports,__globalThis) {
+},{"./router":"4wVP1"}],"4wVP1":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initRouter", ()=>initRouter);
@@ -692,20 +692,23 @@ function initRouter() {
             renderRoute();
         }
     });
+    renderRoute();
 }
-renderRoute();
 function renderRoute() {
     const pathname = window.location.pathname;
     let contentFn;
     switch(pathname){
         case '/':
-            contentFn = (0, _home.randerHome);
+            contentFn = (0, _home.renderHome);
+            break;
         case '/about':
-            contentFn = (0, _about.randerAbout);
+            contentFn = (0, _about.renderAbout);
+            break;
         case '/contact':
-            contentFn = (0, _contact.randerContact);
+            contentFn = (0, _contact.renderContact);
+            break;
         default:
-            contentFn = (0, _service.randerService);
+            contentFn = (0, _service.renderService);
             break;
     }
     (0, _layout.createLayout)(contentFn);
@@ -734,7 +737,7 @@ function Footer() {
     const footer = document.createElement('footer');
     footer.innerHTML = `
         <footer class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 mt-8 lg:py-8">
             <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com/" class="flex items-center">
@@ -856,7 +859,9 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Header", ()=>Header);
 function Header() {
     const header = document.createElement('header');
+    header.className = 'bg-blue-900 text-white';
     header.innerHTML = `
+    <div class="mb-8">
         <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -875,11 +880,14 @@ function Header() {
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-                <a href="/home" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                <a href="/home" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
             </li>
             <li>
+                <a href="/service" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">service</a>
+            </li> 
+            <li>
                 <a href="/about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-            </li>
+            </li>   
             <li>
                 <a href="/contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
             </li>
@@ -887,21 +895,16 @@ function Header() {
         </div> 
         </div>
         </nav>
+    </div>
     `;
-    // Mobile Menu Toggle
-    const menuButton = header.querySelector('#menu-button');
-    const mobileMenu = header.querySelector('#mobile-menu');
-    if (menuButton && mobileMenu) menuButton.addEventListener('click', ()=>{
-        mobileMenu.classList.toggle('hidden');
-    });
     return header;
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"d8csY":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "randerAbout", ()=>randerAbout);
-function randerAbout() {
+parcelHelpers.export(exports, "renderAbout", ()=>renderAbout);
+function renderAbout() {
     const div = document.createElement('div');
     div.innerHTML = ``;
     return div;
@@ -910,45 +913,101 @@ function randerAbout() {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"a0XsK":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "randerContact", ()=>randerContact);
-function randerContact() {
+parcelHelpers.export(exports, "renderContact", ()=>renderContact);
+function renderContact() {
     const div = document.createElement('div');
-    div.innerHTML = ``;
+    div.innerHTML = `
+        <div class="w-full max-w-lg bg-white dark:bg-gray-800 border-gray-200 border dark:border-gray-700 shadow-sm rounded-lg p-5">
+    <h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Create a role with read only in-line policies</h2>
+    <p class="text-gray-500 dark:text-gray-400 mb-6">To give Flowbite read access, please create an IAM Role following <a href="#" class="text-blue-700 dark:text-blue-500 underline hover:no-underline font-medium">trust relationship</a> and <a href="#" class="text-blue-700 dark:text-blue-500 underline hover:no-underline font-medium">inline policy</a>.</p>
+    <label for="account-id" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">Flowbite account ID:</label>
+    <div class="relative mb-4">
+        <input id="account-id" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="756593826" disabled readonly>
+        <button data-copy-to-clipboard-target="account-id" data-tooltip-target="tooltip-account-id" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
+            <span id="default-icon-account-id">
+                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                </svg>
+            </span>
+            <span id="success-icon-account-id" class="hidden">
+                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+            </span>
+        </button>
+        <div id="tooltip-account-id" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+            <span id="default-tooltip-message-account-id">Copy to clipboard</span>
+            <span id="success-tooltip-message-account-id" class="hidden">Copied!</span>
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>
+    <label for="api-key" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">API key:</label>
+    <div class="relative mb-4">
+        <input id="api-key" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="f4h6sd3t-jsy63ind-hsgdt7rs-jdhf76st" disabled readonly>
+        <button data-copy-to-clipboard-target="api-key" data-tooltip-target="tooltip-api-key" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
+            <span id="default-icon-api-key">
+                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                </svg>
+            </span>
+            <span id="success-icon-api-key" class="hidden">
+                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+            </span>
+        </button>
+        <div id="tooltip-api-key" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+            <span id="default-tooltip-message-api-key">Copy to clipboard</span>
+            <span id="success-tooltip-message-api-key" class="hidden">Copied!</span>
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>
+    <label for="role-arn" class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">Role ARN:</label>
+    <div class="relative mb-6">
+        <input id="role-arn" type="text" class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="123456789012:user/Flowbite" disabled readonly>
+        <button data-copy-to-clipboard-target="role-arn" data-tooltip-target="tooltip-role-arn" class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
+            <span id="default-icon-role-arn">
+                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                </svg>
+            </span>
+            <span id="success-icon-role-arn" class="hidden">
+                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+            </span>
+        </button>
+        <div id="tooltip-role-arn" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+            <span id="default-tooltip-message-role-arn">Copy to clipboard</span>
+            <span id="success-tooltip-message-role-arn" class="hidden">Copied!</span>
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>
+    <div class="flex items-center space-x-4 rtl:space-x-reverse">
+        <button type="button" class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Cancel</button>
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Next step</button>
+    </div>
+</div>
+    `;
     return div;
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"l0Soh":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "randerHome", ()=>randerHome);
-function randerHome() {
+parcelHelpers.export(exports, "renderHome", ()=>renderHome);
+function renderHome() {
     const div = document.createElement('div');
     div.innerHTML = `
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-        </a>
-            <div class="p-5">
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Read more
-                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                    </svg>
-                </a>
-            </div>
-        </div>`;
+        `;
     return div;
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jAwlp":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "randerService", ()=>randerService);
-function randerService() {
+parcelHelpers.export(exports, "renderService", ()=>renderService);
+function renderService() {
     const div = document.createElement('div');
     async function fetchProducts() {
         try {
@@ -974,7 +1033,7 @@ function randerService() {
             console.log(product.description);
             const card = document.createElement('div');
             card.innerHTML = `
-      <img src="${product.images[0]}" alt="${product.title}" width="300" height="300" />
+      <img src="${product.images[0]}" alt="${product.title}" width="300" height="350" />
       <h2>${product.title}</h2>
       <p>${product.description}</p>
       <p>Price: ${product.price}$</p>

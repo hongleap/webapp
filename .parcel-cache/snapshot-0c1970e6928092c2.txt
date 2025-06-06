@@ -1,4 +1,4 @@
-6236
+6238
 97E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\other_path\lib\other-lib.js133936154896523953 0
 104E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\test\Datepicker\Datepicker-object.js133936154896666051 0
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\transformer-svg\lib133935838810967130 1
@@ -15,7 +15,7 @@
 77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tailwindcss\dist\plugin.d.mts133935839613960976 0
 70E:\Homework-WEB-ISTAD\Small WebApp\node_modules\is-core-module\LICENSE133936154895952383 0
 45E:\Homework-WEB-ISTAD\Small WebApp\.postcssrc133935839900235031 0
-39E:\Homework-WEB-ISTAD\Small WebApp\dist133936720071403385 1
+39E:\Homework-WEB-ISTAD\Small WebApp\dist133936776303422102 1
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\js\i18n\locales\tr.js133936154897914228 0
 86E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\symlink-error.js.map133935839615128844 0
 80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\ordered-binary\.idea\modules.xml133935838812845410 0
@@ -37,7 +37,7 @@
 91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_is_native_reflect_construct133935838816604314 1
 56E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite133936154899739087 1
 69E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\types.js133935839614199677 0
-53E:\Homework-WEB-ISTAD\Small WebApp\src\pages\about.ts133936486925553552 0
+53E:\Homework-WEB-ISTAD\Small WebApp\src\pages\about.ts133936748879808199 0
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\tooltip\index.d.ts133936154899450420 0
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\css-motion-paths.js133935838815979202 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\packager-wasm\lib\WasmPackager.js133935838811751556 0
@@ -60,31 +60,28 @@
 107E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_dump.1133935838813392001 0
 86E:\Homework-WEB-ISTAD\Small WebApp\node_modules\utility-types\dist\mapped-types.js.map133935838812532913 0
 103E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\document-scrollingelement.js133935838816760456 0
-38E:\Homework-WEB-ISTAD\Small WebApp\src133936505837208810 1
+38E:\Homework-WEB-ISTAD\Small WebApp\src133936765414131532 1
+67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\msgpackr\pack.d.cts133935838812376694 0
+95E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\dropdown\types.d.ts133936154899956339 0
+67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker133936154898122320 1
+85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_read_only_error.mjs133935838817697940 0
+75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\pack.d.ts133935839615659674 0
+71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\index.js133935838813001857 0
+59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@ampproject133935839611688496 1
+73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\optimizer-svg\src133935838811280505 1
+57E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\dist133935838815510375 1
+91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\mediarecorder.js133935838818791816 0
+116E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\rust-win32-x64-msvc\parcel-node-bindings.win32-x64-msvc.node133935838818167045 0
+77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\mode-fix.js133935839613714889 0
+84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\cjs\src\find-made.js.map133935839613714889 0
+75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\node_api.gyp133935838811123380 0
+44E:\Homework-WEB-ISTAD\Small WebApp\test.html133936766743266309 0
 99E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_load.1133935838813507122 0
 95E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\transformer-image\src\validateConfig.js133935838812064164 0
 133E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\accordion\interface.d.ts133936154899648638 0
 71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\semver\ranges\subset.js133935838813946321 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\KY.js133935838818479884 0
-48E:\Homework-WEB-ISTAD\Small WebApp\tsconfig.json133936182750899644 0
-77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\msgpackr-extract\node_modules133935838821603513 1
-82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\lib\utils\within.js133936154897577890 0
-59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\ansi-styles133935838811606466 1
-84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\dropdown133936154899835501 1
-135E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\accordion\interface.js.map133936154898741863 0
-80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\Parcel.test.js133935838815041632 0
-43E:\Homework-WEB-ISTAD\Small WebApp\src\data133936505891400734 1
-101E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\registerprotocolhandler.js133935838819568277 0
-98E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\error-overlay\src\containers\StackFrame.js133935838813433737 0
-75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\index.d.ts133936154899370762 0
-137E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\clipboard\interface.d.ts.map133936154898599134 0
-72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tslib\modules\index.d.ts133935838812532913 0
-70E:\Homework-WEB-ISTAD\Small WebApp\node_modules\color-convert\index.js133935838811436013 0
-93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\promise-finally.js133935838819411938 0
-88E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\scripts\build-css.js133936154896463715 0
-134E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\datepicker\types.d.ts.map133936154898964700 0
-62E:\Homework-WEB-ISTAD\Small WebApp\node_modules\supports-color133935838811606466 1
-73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\src\v8-functions.cpp133935838814885292 0
+48E:\Homework-WEB-ISTAD\Small WebApp\tsconfig.json133936728683243901 0
 61E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\write.js133935838815510375 0
 92E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\popover\index.js133936154896660510 0
 96E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\modal\index.d.ts.map133936154898093876 0
@@ -98,22 +95,16 @@
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\transformer-node133935838811436013 1
 80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\yallist\dist\commonjs\index.d.ts133935839613472623 0
 131E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\input-counter\types.js133936154897222273 0
-49E:\Homework-WEB-ISTAD\Small WebApp\src\index.html133936718752925063 0
+49E:\Homework-WEB-ISTAD\Small WebApp\src\index.html133936762166030640 0
 125E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\dismiss\index.js133936154896559529 0
 56E:\Homework-WEB-ISTAD\Small WebApp\node_modules\has-flag133935838811606466 1
-78E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\quux\foo133936154896387732 1
-71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\index.d.ts133935839615441412 0
-118E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file\src\index.js133935838814571322 0
-56E:\Homework-WEB-ISTAD\Small WebApp\src\data\product.json133936508252902485 0
-128E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\collapse\types.d.ts133936154899827664 0
-67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\package.json133935839613714889 0
 82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\cwd-error.js.map133935839614279760 0
 78E:\Homework-WEB-ISTAD\Small WebApp\node_modules\type-fest\ts41\snake-case.d.ts133935838813684824 0
 84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\transformer-babel\src\jsx.js133935838812845410 0
 93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\x-doc-messaging.js133935838821291135 0
 63E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\mjs133935839614279760 1
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\SG.js133935838819880762 0
-47E:\Homework-WEB-ISTAD\Small WebApp\src\index.ts133936180794329523 0
+47E:\Homework-WEB-ISTAD\Small WebApp\src\index.ts133936755543514339 0
 77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\constants.js133935838814258802 0
 66E:\Homework-WEB-ISTAD\Small WebApp\node_modules\term-size\index.js133935838812064164 0
 76E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\unpack.d.ts.map133935839615128844 0
@@ -138,7 +129,7 @@
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\do-not-track.js133935838816760456 0
 44E:\Homework-WEB-ISTAD\Small WebApp\src\pages133936485400576023 1
 91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\source-map-js\lib\source-map-generator.d.ts133935839613669572 0
-48E:\Homework-WEB-ISTAD\Small WebApp\src\router.ts133936493887931986 0
+48E:\Homework-WEB-ISTAD\Small WebApp\src\router.ts133936751719140175 0
 76E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\logger\src\Logger.js133935838811280505 0
 97E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\tabs\interface.js.map133936154898913963 0
 96E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\modal\interface.d.ts133936154899589862 0
@@ -159,22 +150,22 @@
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\utils\src\is-url.js133935838814103130 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\dist\js\locales\bs.js133936154896457603 0
 82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\extract.d.ts.map133935839614436425 0
-55E:\Homework-WEB-ISTAD\Small WebApp\src\pages\contact.ts133936488667689458 0
+55E:\Homework-WEB-ISTAD\Small WebApp\src\pages\contact.ts133936758505525119 0
 74E:\Homework-WEB-ISTAD\Small WebApp\node_modules\ordered-binary\.nyc_output133935838812220411 1
 81E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\symlink-error.js.map133935839615128844 0
 114E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\index.turbo.d.ts133936154899463000 0
 63E:\Homework-WEB-ISTAD\Small WebApp\node_modules\clone\clone.iml133935838811907922 0
 58E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\types133935838811907922 1
-52E:\Homework-WEB-ISTAD\Small WebApp\src\pages\home.ts133936717266138584 0
+52E:\Homework-WEB-ISTAD\Small WebApp\src\pages\home.ts133936760445572823 0
 68E:\Homework-WEB-ISTAD\Small WebApp\node_modules\.bin\tailwindcss.ps1133936461855466159 0
 76E:\Homework-WEB-ISTAD\Small WebApp\node_modules\is-core-module\test\index.js133936154896022363 0
 99E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_class_apply_descriptor_update.mjs133935838817229832 0
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\update.d.ts133935839615817477 0
-55E:\Homework-WEB-ISTAD\Small WebApp\src\pages\service.ts133936508044946741 0
+55E:\Homework-WEB-ISTAD\Small WebApp\src\pages\service.ts133936776301319209 0
 54E:\Homework-WEB-ISTAD\Small WebApp\node_modules\semver133935838813946321 1
 70E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lightningcss\README.md133935838812689944 0
 78E:\Homework-WEB-ISTAD\Small WebApp\node_modules\type-fest\ts41\kebab-case.d.ts133935838813157933 0
-59E:\Homework-WEB-ISTAD\Small WebApp\src\components\footer.ts133936172962956324 0
+59E:\Homework-WEB-ISTAD\Small WebApp\src\components\footer.ts133936760998863756 0
 82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_create_class.mjs133935838817542079 0
 61E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\README.md133935839615285129 0
 88E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\strip-absolute-path.js133935839614154573 0
@@ -182,7 +173,7 @@
 67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\semver\package.json133935838813946321 0
 96E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\clipboard\types.d.ts133936154899894445 0
 77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\list.js.map133935839614592690 0
-59E:\Homework-WEB-ISTAD\Small WebApp\src\components\header.ts133936542056118729 0
+59E:\Homework-WEB-ISTAD\Small WebApp\src\components\header.ts133936771722509496 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\BundleGraph.js133935838813946321 0
 68E:\Homework-WEB-ISTAD\Small WebApp\node_modules\weak-lru-cache\tests133935838811907922 1
 52E:\Homework-WEB-ISTAD\Small WebApp\node_modules\.bin133936461855466159 1
@@ -199,13 +190,6 @@
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\dist\js\locales\de.js133936154896884757 0
 60E:\Homework-WEB-ISTAD\Small WebApp\node_modules\browserslist133935838812532913 1
 54E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@alloc133935839611688496 1
-67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\msgpackr\pack.d.cts133935838812376694 0
-95E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\dropdown\types.d.ts133936154899956339 0
-67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker133936154898122320 1
-85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_read_only_error.mjs133935838817697940 0
-75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\pack.d.ts133935839615659674 0
-71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\index.js133935838813001857 0
-59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@ampproject133935839611688496 1
 105E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_class_static_private_field_spec_get.mjs133935838817385978 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\SD.js133935838819724529 0
 84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\precedence\aaa\index.js133936154896348797 0
@@ -274,6 +258,11 @@
 55E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@rollup133936154894942969 1
 91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\requests\PackageRequest.js133935838814885292 0
 52E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc133936462204675800 1
+77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\msgpackr-extract\node_modules133935838821603513 1
+82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\lib\utils\within.js133936154897577890 0
+59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\ansi-styles133935838811606466 1
+84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\dropdown133936154899835501 1
+135E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\accordion\interface.js.map133936154898741863 0
 60E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite133935838821447258 1
 129E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\popover\interface.js133936154897049202 0
 60E:\Homework-WEB-ISTAD\Small WebApp\node_modules\magic-string133935839613503301 1
@@ -356,6 +345,10 @@
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\symlinked\_\node_modules133936154896244933 1
 84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\.bin\download-msgpackr-prebuilds.ps1133935838821759749 0
 58E:\Homework-WEB-ISTAD\Small WebApp\node_modules\fill-range133935838811280505 1
+55E:\Homework-WEB-ISTAD\Small WebApp\node_modules\globals133935838811907922 1
+129E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\clipboard\index.d.ts133936154899390325 0
+79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\chownr\dist\commonjs\index.d.ts133935839613449200 0
+79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\cwd-error.d.ts.map133935839614279760 0
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@rollup\pluginutils\dist133936154896002374 1
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\js\i18n\locales\lt.js133936154897370721 0
 86E:\Homework-WEB-ISTAD\Small WebApp\node_modules\chrome-trace-event\dist\trace-event.js133935838810810628 0
@@ -365,10 +358,6 @@
 61E:\Homework-WEB-ISTAD\Small WebApp\node_modules\function-bind133936154896109902 1
 129E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\clipboard\types.d.ts133936154899817677 0
 56E:\Homework-WEB-ISTAD\Small WebApp\node_modules\get-port133935838811606466 1
-55E:\Homework-WEB-ISTAD\Small WebApp\node_modules\globals133935838811907922 1
-129E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\clipboard\index.d.ts133936154899390325 0
-79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\chownr\dist\commonjs\index.d.ts133935839613449200 0
-79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\cwd-error.d.ts.map133935839614279760 0
 67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\weak-lru-cache\dist133935838810655372 1
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\semver\ranges\max-satisfying.js133935838813423316 0
 59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\graceful-fs133935839613020720 1
@@ -437,6 +426,7 @@
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\cjs\_class_private_method_get.cjs133935838813579977 0
 83E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\precedence\bbb\main.js133936154896457603 0
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lightningcss\node\browserslistToTargets.js133935838812220411 0
+49E:\Homework-WEB-ISTAD\Small WebApp\dist\router.js133936725902542787 0
 56E:\Homework-WEB-ISTAD\Small WebApp\node_modules\minipass133935839613523935 1
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\postcss\lib\container.js133935839613020720 0
 105E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\css-font-rendering-controls.js133935838815666639 0
@@ -556,10 +546,20 @@
 68E:\Homework-WEB-ISTAD\Small WebApp\node_modules\json5\lib\unicode.js133935838812532913 0
 59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\safe-buffer133935838811606466 1
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\css-any-link.js133935838815197901 0
+61E:\Homework-WEB-ISTAD\Small WebApp\node_modules\source-map-js133935839613679826 1
 118E:\Homework-WEB-ISTAD\Small WebApp\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\LICENSE133935838810810628 0
 95E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\collapse\index.d.ts133936154899390325 0
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\package.json133935838813157933 0
-61E:\Homework-WEB-ISTAD\Small WebApp\node_modules\source-map-js133935839613679826 1
+98E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\error-overlay\src\containers\StackFrame.js133935838813433737 0
+75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\index.d.ts133936154899370762 0
+137E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\clipboard\interface.d.ts.map133936154898599134 0
+72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tslib\modules\index.d.ts133935838812532913 0
+70E:\Homework-WEB-ISTAD\Small WebApp\node_modules\color-convert\index.js133935838811436013 0
+93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\promise-finally.js133935838819411938 0
+88E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\scripts\build-css.js133936154896463715 0
+134E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\datepicker\types.d.ts.map133936154898964700 0
+62E:\Homework-WEB-ISTAD\Small WebApp\node_modules\supports-color133935838811606466 1
+73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\src\v8-functions.cpp133935838814885292 0
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\unpack.d.ts133935839615817477 0
 86E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\svg-smil.js133935838820193322 0
 77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@tailwindcss\cli\package.json133936461855376468 0
@@ -643,7 +643,6 @@
 68E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\core\Visitor.js133935838811436013 0
 77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\yallist\dist\esm\package.json133935839613020720 0
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_class_extract_field_descriptor133935838816135400 1
-65E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.ad959844.css133936183387971755 0
 88E:\Homework-WEB-ISTAD\Small WebApp\node_modules\source-map-js\lib\source-map-consumer.js133935839613320766 0
 135E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\input-counter\types.js.map133936154899119941 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\SC.js133935838819724529 0
@@ -672,7 +671,7 @@
 128E:\Homework-WEB-ISTAD\Small WebApp\node_modules\ordered-binary\.nyc_output\processinfo\5b6bd808-0399-4ee6-9395-344688761dfa.json133935838812376694 0
 83E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\js\picker\views133936154898073849 1
 82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\yallist\dist\commonjs\package.json133935839613020720 0
-68E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.34df32e0.js.map133936720071238945 0
+68E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.34df32e0.js.map133936776303422102 0
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\weak-lru-cache\README.md133935838812220411 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@tailwindcss\node\dist\require-cache.d.ts133935839613408216 0
 107E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\lib\utils\getOppositeVariationPlacement.d.ts133936154897428707 0
@@ -951,6 +950,7 @@
 123E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\index.d.ts.map133936154898122320 0
 74E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\mjs\index.d.ts133935839614199677 0
 88E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\matchmedia.js133935838818635452 0
+60E:\Homework-WEB-ISTAD\Small WebApp\dist\components\header.js133936725902384189 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\type-fest\source\require-exactly-one.d.ts133935838813643702 0
 84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\dom\events.d.ts.map133936154897369164 0
 85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\transformer-html\package.json133935838811606466 0
@@ -1147,6 +1147,8 @@
 74E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\header.js.map133935839614436425 0
 100E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\symlinked\package\package.json133936154896678064 0
 93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\dial\types.js.map133936154899162733 0
+78E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\quux\foo133936154896387732 1
+71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\index.d.ts133935839615441412 0
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\dist\Datepicker.esm.js133936154896678064 0
 60E:\Homework-WEB-ISTAD\Small WebApp\node_modules\jiti\LICENSE133935839612864504 0
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\index.d.ts.map133935839614436425 0
@@ -1177,7 +1179,6 @@
 95E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\esm\_class_apply_descriptor_set.js133935838814885292 0
 80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\package.json133936154898113849 0
 80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\make-command.js.map133935839614592690 0
-64E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.859f80c4.js133936183387966565 0
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\precedence\bbb133936154896387732 1
 101E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\utils\test\input\sourcemap\source-root.js.map133935838814885292 0
 71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\esm\mkdir.d.ts133935839615530913 0
@@ -1406,11 +1407,6 @@
 93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\css-containment.js133935838815354502 0
 83E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\mode-fix.d.ts.map133935839614592690 0
 91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\components\drawer\types.js133936154897295194 0
-73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\optimizer-svg\src133935838811280505 1
-57E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\dist133935838815510375 1
-91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\mediarecorder.js133935838818791816 0
-116E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\rust-win32-x64-msvc\parcel-node-bindings.win32-x64-msvc.node133935838818167045 0
-77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\mode-fix.js133935839613714889 0
 131E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\tooltip\interface.d.ts133936154899614245 0
 74E:\Homework-WEB-ISTAD\Small WebApp\node_modules\tar\dist\commonjs\pax.d.ts133935839615733729 0
 73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\supports-color\browser.js133935838810810628 0
@@ -1949,7 +1945,6 @@
 66E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\fs\LICENSE133935838810810628 0
 76E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\lib\dom-utils133936154897049202 1
 82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\invalid_main133936154896650528 1
-69E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.ad959844.css.map133936183388039669 0
 65E:\Homework-WEB-ISTAD\Small WebApp\node_modules\msgpackr\index.js133935838812845410 0
 80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\resolve\test\resolver\mug.coffee133936154896079908 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\HN.js133935838817697940 0
@@ -2284,8 +2279,6 @@
 91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\localecompare.js133935838818479884 0
 68E:\Homework-WEB-ISTAD\Small WebApp\node_modules\globals\package.json133935838811606466 0
 81E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\node_addon_api.gyp133935838810810628 0
-84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\cjs\src\find-made.js.map133935839613714889 0
-75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\node_api.gyp133935838811123380 0
 76E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\noexcept.gypi133935838811751556 0
 72E:\Homework-WEB-ISTAD\Small WebApp\node_modules\node-addon-api\README.md133935838813157933 0
 85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\runtime-rsc\src\RSCRuntime.js133935838811436013 0
@@ -2462,6 +2455,8 @@
 81E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\esm\index.phoenix.js133936154896950642 0
 64E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mri\lib\index.js133936461855416157 0
 62E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\LICENSE133935839612864504 0
+128E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\collapse\types.d.ts133936154899827664 0
+67E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\package.json133935839613714889 0
 133E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\clipboard\types.d.ts.map133936154899024082 0
 81E:\Homework-WEB-ISTAD\Small WebApp\node_modules\lmdb\dependencies\lz4\lib\lz4hc.c133935838813789895 0
 78E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\mjs\find-made.d.ts133935839614199677 0
@@ -2495,6 +2490,7 @@
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\mjs\opts-arg.js.map133935839614085775 0
 132E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\datepicker\types.js.map133936154899184226 0
 76E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\mjs\package.json133935839613679826 0
+50E:\Homework-WEB-ISTAD\Small WebApp\dist\components133936725902384189 1
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\wasm-signext.js133935838821134678 0
 132E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\cjs\components\collapse\index.d.ts.map133936154898022379 0
 77E:\Homework-WEB-ISTAD\Small WebApp\node_modules\mkdirp\dist\mjs\path-arg.d.ts133935839614279760 0
@@ -2624,6 +2620,7 @@
 87E:\Homework-WEB-ISTAD\Small WebApp\node_modules\magic-string\dist\magic-string.cjs.d.ts133935839613679826 0
 87E:\Homework-WEB-ISTAD\Small WebApp\node_modules\enhanced-resolve\lib\ResolverFactory.js133935839614034289 0
 85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\magic-string\dist\magic-string.cjs.js133935839612864504 0
+48E:\Homework-WEB-ISTAD\Small WebApp\dist\index.js133936725902227837 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\magic-string\dist\magic-string.cjs.js.map133935839613207955 0
 87E:\Homework-WEB-ISTAD\Small WebApp\node_modules\magic-string\dist\magic-string.es.d.mts133935839613659127 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\magic-string\dist\magic-string.es.mjs.map133935839613373634 0
@@ -3135,7 +3132,6 @@
 131E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\tooltip\interface.d.ts133936154899755086 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\AD.js133935838812064164 0
 85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@tailwindcss\oxide\scripts\install.js133935839612864504 0
-68E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.859f80c4.js.map133936183388017733 0
 129E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\tooltip\interface.js133936154897139438 0
 131E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\tooltip\types.d.ts.map133936154899047010 0
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\dist\esm\modifiers\index.js133936154897793813 0
@@ -3165,6 +3161,7 @@
 129E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\modal\types.d.ts.map133936154899047010 0
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\accordion\index.js133936154896483945 0
 123E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\modal\types.js133936154897295194 0
+49E:\Homework-WEB-ISTAD\Small WebApp\dist\layout.js133936725902384189 0
 133E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\input-counter\index.d.ts133936154899440337 0
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\rel-noopener.js133935838819568277 0
 141E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\input-counter\interface.d.ts.map133936154898709389 0
@@ -3214,6 +3211,7 @@
 130E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\dial\interface.js.map133936154898885133 0
 69E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\types\index.d.ts133935838812220411 0
 122E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\dial\types.js133936154897268110 0
+56E:\Homework-WEB-ISTAD\Small WebApp\dist\pages\service.js133936725902542787 0
 130E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\datepicker\index.d.ts133936154899390325 0
 134E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite-datepicker\node_modules\flowbite\lib\esm\components\datepicker\index.d.ts.map133936154898122320 0
 87E:\Homework-WEB-ISTAD\Small WebApp\node_modules\estree-walker\dist\umd\estree-walker.js133936154896041035 0
@@ -4018,6 +4016,7 @@
 70E:\Homework-WEB-ISTAD\Small WebApp\node_modules\ansi-styles\index.d.ts133935838811751556 0
 97E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\dropdown\index.js.map133936154898297940 0
 99E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\dropdown\interface.d.ts133936154899532354 0
+45E:\Homework-WEB-ISTAD\Small WebApp\dist\pages133936725902542787 1
 97E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\dropdown\interface.js133936154897059638 0
 101E:\Homework-WEB-ISTAD\Small WebApp\node_modules\flowbite\lib\cjs\components\dropdown\interface.js.map133936154898801016 0
 100E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\lib\utils\getMainAxisFromPlacement.js133936154897370721 0
@@ -4409,6 +4408,7 @@
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\IM.js133935838817854179 0
 99E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\background-attachment.js133935838814103130 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\IS.js133935838818167045 0
+91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_overload_yield\package.json133935838816760456 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\JE.js133935838818167045 0
 87E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_class_private_field_get133935838816135400 1
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\regions\JO.js133935838818167045 0
@@ -4749,6 +4749,8 @@
 86E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\push-api.js133935838819568277 0
 106E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_unsupported_iterable_to_array\package.json133935838817073792 0
 91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\queryselector.js133935838819568277 0
+80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\Parcel.test.js133935838815041632 0
+101E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\registerprotocolhandler.js133935838819568277 0
 85E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\rellist.js133935838819568277 0
 84E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\bundler-default\package.json133935838811907922 0
 99E:\Homework-WEB-ISTAD\Small WebApp\node_modules\caniuse-lite\data\features\requestanimationframe.js133935838819568277 0
@@ -4845,7 +4847,7 @@
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\source-map\dist\SourceMap.js.flow133935838811123380 0
 92E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@rollup\plugin-node-resolve\types\index.d.ts133936154896120842 0
 62E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@types\resolve133936154895972361 1
-69E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.61d3354a.css.map133936720071403385 0
+69E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.61d3354a.css.map133936776303422102 0
 73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@types\resolve\index.d.ts133936154895952383 0
 70E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@types\resolve\LICENSE133936154895902299 0
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@types\resolve\package.json133936154895992479 0
@@ -4932,7 +4934,6 @@
 98E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_sliced_to_array_loose\package.json133935838816760456 0
 93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_set_prototype_of\package.json133935838816760456 0
 92E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_read_only_error\package.json133935838816760456 0
-91E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_overload_yield\package.json133935838816760456 0
 96E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_object_spread_props\package.json133935838816760456 0
 90E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_object_spread\package.json133935838816760456 0
 96E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\_\_non_iterable_spread\package.json133935838816604314 0
@@ -4996,7 +4997,6 @@
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_array_without_holes.mjs133935838817229832 0
 86E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_array_with_holes.mjs133935838817229832 0
 93E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_assert_this_initialized.mjs133935838817229832 0
-64E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.b3f58761.js133936456479730524 0
 80E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\ParcelConfig.js133935838815041632 0
 89E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@popperjs\core\lib\utils\mergeByName.d.ts133936154897445317 0
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@swc\helpers\src\_async_generator_delegate.mjs133935838817229832 0
@@ -6022,6 +6022,7 @@
 131E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg\node_modules\parcel-config-local133935838816135400 1
 144E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg\node_modules\parcel-config-local\package.json133935838816135400 0
 118E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file\package.json133935838816135400 0
+118E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file\src\index.js133935838814571322 0
 111E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\src\index.js133935838814571322 0
 110E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\invalid-source-missing\package.json133935838816135400 0
 95E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\test\fixtures\glob-like\[entry].js133935838813157933 0
@@ -6073,6 +6074,7 @@
 78E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\loadDotEnv.js133935838814745215 0
 82E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\PackagerRunner.js133935838814885292 0
 79E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\projectPath.js133935838815197901 0
+60E:\Homework-WEB-ISTAD\Small WebApp\dist\components\footer.js133936725902384189 0
 71E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\public133935838815510375 1
 94E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\registerCoreWithSerializer.js133935838815197901 0
 73E:\Homework-WEB-ISTAD\Small WebApp\node_modules\@parcel\core\lib\requests133935838815823805 1
@@ -6228,10 +6230,10 @@
 59E:\Homework-WEB-ISTAD\Small WebApp\node_modules\.bin\semver133935838821759749 0
 64E:\Homework-WEB-ISTAD\Small WebApp\node_modules\.bin\tailwindcss133936461855466159 0
 75E:\Homework-WEB-ISTAD\Small WebApp\node_modules\.bin\update-browserslist-db133935838821759749 0
-50E:\Homework-WEB-ISTAD\Small WebApp\dist\index.html133936720070909875 0
-64E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.34df32e0.js133936720071238945 0
-64E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.59712999.js133936171627071185 0
-68E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.59712999.js.map133936171627095904 0
-65E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.61d3354a.css133936720071394879 0
-68E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.b3f58761.js.map133936456479886899 0
+50E:\Homework-WEB-ISTAD\Small WebApp\dist\index.html133936776303422102 0
+64E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.34df32e0.js133936776303422102 0
+65E:\Homework-WEB-ISTAD\Small WebApp\dist\Small WebApp.61d3354a.css133936776303422102 0
+54E:\Homework-WEB-ISTAD\Small WebApp\dist\pages\about.js133936725902384189 0
+56E:\Homework-WEB-ISTAD\Small WebApp\dist\pages\contact.js133936725902384189 0
+53E:\Homework-WEB-ISTAD\Small WebApp\dist\pages\home.js133936725902497629 0
 56E:\Homework-WEB-ISTAD\Small WebApp\.vscode\settings.json133936484304862336 0

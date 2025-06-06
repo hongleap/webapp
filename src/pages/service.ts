@@ -1,4 +1,4 @@
-export function randerService():HTMLElement{
+export function renderService():HTMLElement{
     const div = document.createElement('div');
 
     type Products = {
@@ -37,7 +37,7 @@ export function randerService():HTMLElement{
     console.log(product.description);
     const card = document.createElement('div');
     card.innerHTML = `
-      <img src="${product.images[0]}" alt="${product.title}" width="300" height="300" />
+      <img src="${product.images[0]}" alt="${product.title}" width="300" height="350" />
       <h2>${product.title}</h2>
       <p>${product.description}</p>
       <p>Price: ${product.price}$</p>
