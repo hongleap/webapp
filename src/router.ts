@@ -1,8 +1,8 @@
 import { createLayout } from "./layout";
+import { renderHome } from "./pages/home";
 import { renderAbout } from "./pages/about";
 import { renderContact } from "./pages/contact";
-import { renderHome } from "./pages/home";
-import { renderService } from "./pages/service";
+import { renderService } from "./pages/products";
 
 export function initRouter(): void {
     window.addEventListener('popstate', renderRoute);
@@ -26,6 +26,9 @@ export function initRouter(): void {
     let contentFn: () => HTMLElement;
 
     switch (pathname) {
+        case '/':
+            contentFn = renderHome;
+            break;
         case '/home':
             contentFn = renderHome;
             break;

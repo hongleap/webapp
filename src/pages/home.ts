@@ -27,6 +27,35 @@ export function renderHome(): HTMLElement{
         </div><img class="w-full max-w-[600px]" src="https://queue-it.com/media/ppcp1twv/product-drop.jpg" alt="">
       </div>
     </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-blue-800 mb-10">Why Choose Us</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow border border-blue-100">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Fast & Lightweight</h4>
+          <p>Optimized performance using Tailwind and TypeScript.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow border border-blue-100">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Easy Integration</h4>
+          <p>Seamlessly integrate with APIs and modern frameworks.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow border border-blue-100">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Responsive Design</h4>
+          <p>Fully responsive layout that works on any device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-3xl text-center">
+      <h3 class="text-3xl font-bold text-blue-800 mb-6">About MyModernSite</h3>
+      <p class="text-lg">MyModernSite is a front-end project built using HTML, CSS, TypeScript, and Tailwind CSS. It's designed to help developers create beautiful, functional web apps with modern features like API integration, dynamic routing, dark mode, and more.</p>
+    </div>
+  </section>
     `;
     return div;
 }
